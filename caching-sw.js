@@ -1,12 +1,11 @@
 
+navigator.serviceWorker.register('/OneSignalSDKWorker.js')
 
-
-
+console.log('bbb')
 // self.addEventListener('activate', function () {
 //     console.log('[Service worker] activated.') 
 // });
 
-if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {
         console.log('daaa')
         navigator.serviceWorker.register('/OneSignalSDKWorker.js').then(function (registration) {
@@ -17,4 +16,3 @@ if ('serviceWorker' in navigator) {
             console.log('ServiceWorker registration failed: ', err);
         });
     });
-}
