@@ -1,3 +1,6 @@
+navigator.serviceWorker.register('/OneSignalSDKWorker.js');
+
+
 self.addEventListener('install', function () {
     console.log('[Service Worker] installed.') 
 });
