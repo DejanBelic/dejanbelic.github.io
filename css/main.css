@@ -5,3 +5,7 @@ body {
 h2 {
     color: yellowgreen;
 }
+
+body * {
+    font-family: 'Roboto',sans-serif;
+}
